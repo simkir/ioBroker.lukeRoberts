@@ -1,0 +1,97 @@
+{
+    "common": {
+        "name": "lukeroberts",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "LukeRoberts Hub",
+        "titleLang": {
+            "en": "LukeRoberts Hub",
+            "de": "LukeRoberts Hub",
+            "ru": "LukeRoberts Hub",
+            "pt": "LukeRoberts Hub",
+            "nl": "LukeRoberts Hub",
+            "fr": "LukeRoberts Hub",
+            "it": "Hub di LukeRoberts",
+            "es": "LukeRoberts Hub",
+            "pl": "LukeRoberts Hub",
+            "zh-cn": "卢克·罗伯茨集线器"
+        },
+        "desc": {
+            "en": "Controlling Luke Robert Model F lights",
+            "de": "Steuerung der Lichter von Luke Robert Model F.",
+            "ru": "Управление светом Люка Роберта Model F",
+            "pt": "Controle das luzes Luke Robert Model F",
+            "nl": "Het aansturen van Luke Robert Model F-lampen",
+            "fr": "Contrôle des lumières du modèle F de Luke Robert",
+            "it": "Controllo delle luci di Luke Robert Model F.",
+            "es": "Controlando las luces de Luke Robert Model F",
+            "pl": "Kontrolowanie świateł Luke Robert Model F.",
+            "zh-cn": "控制卢克·罗伯特F型车灯"
+        },
+        "authors": [
+            "simkir <temp2@kirstein.net>"
+        ],
+        "keywords": [
+            "template"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "lukeroberts.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/simkir/ioBroker.lukeroberts/master/admin/lukeroberts.png",
+        "readme": "https://github.com/simkir/ioBroker.lukeroberts/blob/master/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "lighting",
+        "compact": true,
+        "materialize": true,
+        "supportCustoms": true,
+        "dependencies": [
+            {
+                "js-controller": ">=1.4.2"
+            }
+        ]
+    },
+    "native": {
+        "option1": true,
+        "option2": "42"
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}
